@@ -1,4 +1,4 @@
-# Conflicts in Africa, Explored in R
+# Blog Code
 
-This is a collection of scripts connected to a post
+This is a collection of scripts connected to posts
 [on my blog](http://data-adventures.com).
