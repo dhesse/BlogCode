@@ -1,7 +1,8 @@
 library(readr)
 library(ggmap)
 library(dplyr)
-conflict.data <- read_csv("ACLED Version 6 All Africa 1997-2015_csv_dyadic.csv.gz")
+conflict.data <- read_csv(
+    "ACLED Version 6 All Africa 1997-2015_csv_dyadic.csv.gz")
 bbox <- make_bbox(LONGITUDE,
                   LATITUDE,
                   data=conflict.data,
@@ -13,7 +14,7 @@ ggmap(africa) +
                    color=YEAR,
                    size=FATALITIES),
                data=conflict.data %>%
-                   filter(FATALITIES < 5000),
+                   filter(FATALITIES < 6000),
                alpha=0.5) +
     xlim(-20, 40) +
     ylim(-35, 35) +
